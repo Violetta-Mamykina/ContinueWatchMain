@@ -6,7 +6,6 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     var secondsElapsed: Int = 0
-
     var backgroundThread = Thread {
         while (true) {
             Thread.sleep(1000)
@@ -15,7 +14,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
